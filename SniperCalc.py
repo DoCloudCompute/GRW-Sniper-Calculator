@@ -35,8 +35,8 @@ while True:
     height = int(img.shape[0] * 90 / 100)
     img = cv2.resize(img, (width,height), interpolation = cv2.INTER_AREA)
 
-    cv2.namedWindow("where to shoot dickhead")
-    cv2.moveWindow("where to shoot dickhead",0,0)
-    cv2.imshow("where to shoot dickhead", img)
+    cv2.namedWindow("where to shoot")
+    cv2.moveWindow("where to shoot",0,0)
+    cv2.imshow("where to shoot", img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
