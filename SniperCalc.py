@@ -3,9 +3,9 @@ import easygui
 import numpy as np
 
 # gen poly
-lx = [0,300,400,500,600,700,800,900,1000]
-ly = [538,559,581,604,626,655,677,723,769]
-l = np.polyfit(lx, ly, 2)
+lx = [0,300,400,500,600,700,800,900,1000]  # in game distance
+ly = [538,559,581,604,626,655,677,723,769] # pixels in the picture
+l = np.polyfit(lx, ly, 2) # creates the polynomial that fits the points best
 l = l[::-1]
 
 def pix_f_dist(dist):
